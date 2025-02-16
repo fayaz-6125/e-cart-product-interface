@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+            <a href="#" class="cart-btn">🛒 Cart</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-container">
+            <div class="image-gallery">
+                <div class="main-image">
+                    <img id="current-image" src="https://m.media-amazon.com/images/I/81SigpJN1KL._SX679_.jpg" alt="Product Image">
+                </div>
+                <div class="thumbnails">
+                    <img src="https://m.media-amazon.com/images/I/81SigpJN1KL._SX679_.jpg" alt="Product 1" onclick="changeImage('product1.jpg')">
+                    <img src="https://m.media-amazon.com/images/I/61O3kh6qpvL._SX679_.jpg" alt="Product 2" onclick="changeImage('product2.jpg')">
+                    <img src="https://m.media-amazon.com/images/I/71g7dxYXiOL._SX679_.jpg" alt="Product 3" onclick="changeImage('product3.jpg')">
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h1>iphone 15 pro </h1>
+                <p class="description">iPhone 15 Pro has a strong and light aerospace-grade titanium design with a textured matte-glass back. It also features a Ceramic Shield front that’s tougher than any smartphone glass. And it’s splash, water, and dust resistant.</p>
+                <p class="price">rs.1,34,900</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="quick-view" onclick="openQuickView()">Quick View</button>
+            </div>
+        </div>
+
+        <section class="reviews">
+            <h2>Customer Reviews</h2>
+            <p>⭐⭐⭐⭐⭐ - "Absolutely love this mobile! Great features and battery life!"</p>
+        </section>
+
+        <section class="related-products">
+            <h2>Related Products</h2>
+            <div class="related-items">
+                <div class="item">
+                    <img src="https://m.media-amazon.com/images/I/61giwQtR1qL._SX679_.jpg" alt="Related Product 1">
+                    <p>iphone 16 pro max</p>
+                    <p>rs.1,77,900</p>
+                </div>
+                <div class="item">
+                    <img src="https://m.media-amazon.com/images/I/31Sm7rY5XxL._SY445_SX342_QL70_FMwebp_.jpg" alt="Related Product 2">
+                    <p>iphone 16 plus</p>
+                    <p>rs.83,900</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Quick View Modal -->
+    <div id="quick-view-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeQuickView()">&times;</span>
+            <img src="https://m.media-amazon.com/images/I/81SigpJN1KL._SX679_.jpg" id="modal-image" alt="Product Image">
+            <h2>iphone 15 pro</h2>
+            <p>iPhone 15 Pro has a strong and light aerospace-grade titanium design with a textured matte-glass back. It also features a Ceramic Shield front that’s tougher than any smartphone glass. And it’s splash, water, and dust resistant.</p>
+            <p class="price">rs.1,34,900</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+</body>
+</html>
